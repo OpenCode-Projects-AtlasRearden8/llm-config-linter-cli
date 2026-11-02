@@ -1,0 +1,2 @@
+# Empty/near-empty config: linter should flag the missing pieces.
+temperature: 1.4

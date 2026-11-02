@@ -1,0 +1,8 @@
+# Intentionally messy config used by the test suite.
+# NOTE: the fake key below is a sample string for tests only - it is not real.
+base_url: https://api.openai.com/v1
+api_key: sk-sample-test-key-not-real-1234567890abcdef
+model: gpt-4
+temperature: 2.5
+timeout: 30 seconds
+download_dir: /home/dylan/.models

@@ -1,0 +1,9 @@
+# Nested provider config, with an env-var reference (the good habit).
+provider:
+  name: ollama
+  base_url: http://localhost:11434/v1
+  api_key: ${OLLAMA_API_KEY}
+  model: llama3
+  timeout: 90
+client:
+  temperature: 0.2

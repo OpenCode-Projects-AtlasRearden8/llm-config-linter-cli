@@ -1,0 +1,4 @@
+# Broken YAML used to test parse-error reporting.
+base_url: http://localhost:11434/v1
+model: [unclosed
+  temperature: 0.7

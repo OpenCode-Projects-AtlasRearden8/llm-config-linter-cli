@@ -1,0 +1,6 @@
+# Example local-AI client config: everything this linter likes to see.
+base_url: http://localhost:11434/v1
+model: llama3
+temperature: 0.7
+timeout: 60
+api_key: ""            # local Ollama needs no key; leave empty or use an env var

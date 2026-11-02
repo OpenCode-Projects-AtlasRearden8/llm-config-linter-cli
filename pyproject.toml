@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-config-linter-cli"
+version = "0.1.0"
+description = "Sanity-check config files for local-AI tools (Ollama, OpenAI-compatible endpoints) - offline, local-first."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+keywords = ["ollama", "llm", "config", "linter", "local-ai"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = [
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+llm-config-lint = "llm_config_linter.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["llm_config_linter*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
