@@ -1,7 +1,13 @@
-__pycache__/
-*.py[co]
 *.egg-info/
+*.py[co]
+*.pyc
+.eggs/
+.env
+.env.*
+.pytest_cache/
+.venv/
+__pycache__/
 build/
 dist/
-.pytest_cache/
-.eggs/
+dist/*.tmp
+node_modules/
